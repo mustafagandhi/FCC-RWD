@@ -1,0 +1,70 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+.projects {
+    text-align: center;
+    padding: 20px;
+}
+
+.projects ul {
+    list-style: none;
+    padding: 0;
+}
+
+.projects li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.projects a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-links a {
+    color: #343a40;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
+
+.certificate {
+    text-align: center;
+    padding: 50px;
+}
+
+.certificate h2 {
+    color: #343a40;
+}
+
+.certificate p {
+    color: #343a40;
+}
+
+.certificate img {
+    max-width: 100%;
+    height: auto;
+}
