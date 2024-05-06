@@ -1,0 +1,31 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Node modules (if you use any node packages)
+node_modules/
+
+# Build output (if you have any build process)
+dist/
+build/
+
+# Dependency directories (if applicable)
+bower_components/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Optional: If you have specific files or folders to exclude
+# secrets.json
+# /path/to/private_folder/
+
+# Cache files for tools like ESLint
+.eslintcache

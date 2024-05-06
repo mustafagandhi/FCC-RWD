@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/survey-form.css">
+</head>
+
+<body>
+    <!-- Title -->
+    <h1 id="title">Survey Form</h1>
+    <!-- Description -->
+    <p id="description">This is a comprehensive survey about eating habits and lifestyle.</p>
+    <hr>
+    <!-- Main Survey Form -->
+    <form id="survey-form">
+        <!-- Section 1: Personal Information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name" id="name-label">Name: <input id="name" type="text" name="name" placeholder="John Doe"
+                    required></label>
+            <label for="email" id="email-label">Email: <input id="email" type="email" name="email"
+                    placeholder="user@example.com" required></label>
+            <label for="number" id="number-label">Age: <input id="number" type="number" name="number" min="13" max="120"
+                    placeholder="21" required></label>
+            <label for="gender">Gender:
+                <select name="gender" id="gender" required>
+                    <option value="">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </label>
+            <label for="country">Country of Residence:</label>
+            <input type="text" id="country" name="country" placeholder="Your country" required>
+        </fieldset>
+        <!-- END -->
+        <!-- Section 2: Eating Habits -->
+        <fieldset>
+            <legend>Eating Habits</legend>
+            <label for="dropdown">Preferred Cuisine:</label>
+            <select name="dropdown" id="dropdown" required>
+                <option value="">Select</option>
+                <option value="1">Indian</option>
+                <option value="2">American</option>
+                <option value="3">French</option>
+                <option value="4">Chinese</option>
+                <option value="5">Italian</option>
+                <option value="6">Mexican</option>
+                <option value="7">Japanese</option>
+                <option value="8">Other</option>
+            </select>
+            <label>How many meals do you eat per day?
+                <label for="once"><input id="once" value="once" type="radio" name="meals" checked>Once</label>
+                <label for="twice"><input id="twice" value="twice" type="radio" name="meals">Twice</label>
+                <label for="more"><input id="more" value="more" type="radio" name="meals">More than twice</label>
+            </label>
+            <label for="vegetarian">Are you a vegetarian?
+                <input type="radio" id="vegetarian" name="vegetarian" value="vegetarian">Yes
+                <input type="radio" id="not-vegetarian" name="vegetarian" value="not-vegetarian" checked>No
+            </label>
+            <label for="food-allergies">Do you have any food allergies or dietary restrictions? If yes, please
+                specify:</label>
+            <textarea id="food-allergies" name="food-allergies" rows="3" cols="24"
+                placeholder="E.g., lactose intolerance, gluten-free, etc."></textarea>
+        </fieldset>
+        <!-- END -->
+        <!-- Section 3: Food Preferences -->
+        <fieldset>
+            <legend>Food Preferences</legend>
+            <label for="fav-food">Favorite Food:</label>
+            <input type="text" id="fav-food" name="fav-food" placeholder="Pizza, Sushi, etc.">
+            <label for="least-fav-food">Least Favorite Food:</label>
+            <input type="text" id="least-fav-food" name="least-fav-food" placeholder="Broccoli, Liver, etc.">
+            <label for="snacks">Favorite Snacks:</label>
+            <input type="text" id="snacks" name="snacks" placeholder="Chips, Nuts, etc.">
+        </fieldset>
+        <!-- END -->
+        <!-- Section 4: Lifestyle and Health -->
+        <fieldset>
+            <legend>Lifestyle and Health</legend>
+            <label for="exercise-frequency">How often do you exercise per week?</label>
+            <select name="exercise-frequency" id="exercise-frequency" required>
+                <option value="">Select</option>
+                <option value="rarely">Rarely or Never</option>
+                <option value="1-2">1-2 times per week</option>
+                <option value="3-5">3-5 times per week</option>
+                <option value="daily">Daily</option>
+            </select>
+            <label for="sleep-hours">Average hours of sleep per night:</label>
+            <input type="number" id="sleep-hours" name="sleep-hours" min="1" max="24" placeholder="6">
+            <label for="health-goals">What are your health goals or aspirations?</label>
+            <textarea id="health-goals" name="health-goals" rows="3" cols="24"
+                placeholder="E.g., lose weight, gain muscle, improve flexibility, etc."></textarea>
+        </fieldset>
+        <!-- END -->
+        <!-- Section 5: Feedback -->
+        <fieldset>
+            <legend>Feedback</legend>
+            <label for="suggestions">Any suggestions for improvement?</label>
+            <textarea id="suggestions" name="suggestions" rows="3" cols="24"
+                placeholder="Your feedback is valuable..."></textarea>
+            <label for="rating">How would you rate your overall eating habits on a scale of 1 to 10?</label>
+            <input type="number" id="rating" name="rating" min="1" max="10" placeholder="5">
+        </fieldset>
+        <!-- END -->
+        <!-- Section 6: Additional Options -->
+        <fieldset>
+            <legend>Additional Options</legend>
+            <label for="terms"><input type="checkbox" id="terms" name="terms" value="terms">I agree to the <a
+                    href="#">Terms and Conditions</a>:</label>
+            <label for="newsletter"><input type="checkbox" id="newsletter" name="newsletter"
+                    value="newsletter">Subscribe to our newsletter and receive special offers:</label>
+        </fieldset>
+        <!-- END -->
+        <!-- Submit -->
+    </form>
+    <!-- END -->
+    <hr>
+    <input id="submit" type="submit" value="Submit">
+</body>
+
+</html>
